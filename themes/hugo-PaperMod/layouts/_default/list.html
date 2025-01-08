@@ -41,6 +41,7 @@
 {{- $pages := union .RegularPages .Sections }}
 
 {{- if .IsHome }}
+{{- $pages = slice }} {{/* No pages for the homepage */}}
 {{- end }}
 
 {{- $paginator := .Paginate $pages }}
