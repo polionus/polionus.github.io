@@ -6,6 +6,8 @@ draft = false
 
 ## Armin Ashrafi
 
-![Alt text](armin/static/armin.jpg)
+<img src="armin.jpg" alt="My Image" style="float:left; width:30%; margin-right:15px;" />
+I am a first year MSc student of computing science at the University of Alberta. My main interests are in the field of Reinforcement Learning. That's all for now. 
 
-Welcome. I am armin, being armin, armining in armin land.
+
+
