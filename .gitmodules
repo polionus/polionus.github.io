@@ -4,3 +4,9 @@
 [submodule "themes/hugo-PaperMod"]
 	path = themes/hugo-PaperMod
 	url = https://github.com/adityatelange/hugo-PaperMod.git
+[submodule "themes/hugo-gruvbox-theme"]
+	path = themes/hugo-gruvbox-theme
+	url = https://github.com/bbrks/hugo-gruvbox-theme.git
+[submodule "themes/adritian-free-hugo-theme"]
+	path = themes/adritian-free-hugo-theme
+	url = https://github.com/Kenan7/adritian-free-hugo-theme.git
