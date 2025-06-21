@@ -1,0 +1,59 @@
+.leftbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #eeeeee;
+  padding: 10px;
+  width: 150px;
+  height: 100vh; /* full screen height */
+  display: flex;
+  flex-direction: column;
+  /* box-shadow: 4px 0 8px #888888;  */
+}
+
+.leftbar a {
+
+  text-align: center;  
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  margin-bottom: 10px;           /* Adds space between boxes */
+  background-color: white;       /* Box background */
+  border: 1px solid #ccc;        /* Box border */
+  border-radius: 4px;            /* Optional: rounded corners */
+  box-shadow: 0 1px 2px #aaa;    /* Optional: subtle shadow */
+  transition: background 0.2s;   /* Smooth hover effect */
+}
+
+.leftbar a:hover {
+  background-color: #f0f0f0;
+}
+
+
+body {
+  
+  color: white;
+  background-color: #343131;
+  font-family: Helvetica, sans-serif;  
+  margin-left: 220px; /* So the main content doesn’t go under the nav */
+  padding: 20px;
+}
+
+
+.other-links{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    margin-bottom: 8px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 8px;
+}
+
+
+.images{
+    width: 700px;
+    height: 437px;
+}
+
