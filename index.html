@@ -1,31 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Recursive Self-Improvement</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Armin Ashrafi | About Me</title>
+
+  <!-- Feel free to move this CSS to its own file (e.g., style.css) -->
+  <style>
+    :root {
+      --accent: #0073e6;
+      --text: #222;
+      --bg: #fff;
+      --max-width: 900px;
+      --body-font: "Helvetica Neue", Arial, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--body-font);
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* ---------- Navigation ----------- */
+    nav {
+      background: var(--bg);
+      border-bottom: 1px solid #e6e6e6;
+      padding: 0.5rem 1rem;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+      position: relative;
+    }
+
+    nav a.current,
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    nav a.current::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 0;
+      bottom: -4px;
+      background: var(--accent);
+    }
+
+    /* ---------- Layout ----------- */
+    main {
+      max-width: var(--max-width);
+      width: 100%;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      flex: 1 0 auto;
+    }
+
+    header h1 {
+      margin-top: 0;
+      font-size: 2.5rem;
+    }
+
+    .profile-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: 2rem;
+    }
+
+    .profile-wrapper img {
+      width: 180px;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    .contact {
+      font-size: 0.95rem;
+    }
+
+    .contact p {
+      margin: 0.25rem 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem 0 2rem;
+      font-size: 0.8rem;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
-    <h1>Recursive Self-Improvement</h1>
-    <p>A blog about intelligence</p>
-
-    <img src="images/intelligence.png" class="images"> 
-
-
-  <nav class="leftbar">
-    <a href="index.html">Home</a>
-    <a href="pages/articles.html">Articles</a>
-    <a href="pages/log-math.html">About me</a>
-    <a href="pages/art.html">Experimnets</a>
+  <!-- Navigation (add or remove links as needed) -->
+  <nav>
+    <ul>
+      <li><a href="about.html" class="current">about</a></li>
+      <li><a href="group.html">group</a></li>
+      <li><a href="publications.html">publications</a></li>
+      <li><a href="research.html">research</a></li>
+      <li><a href="teaching.html">teaching</a></li>
+      <li><a href="cv.pdf">cv</a></li>
+      <li><a href="media.html">media</a></li>
+      <li><a href="pages/blog.html">blog</a></li>
+    </ul>
   </nav>
 
-  <div class="other-links">
-    
-    <a href="https://lesswrong.com">Less Wrong</a>
-    <a href="https://plato.stanford.edu/">Philosophy</a>
-  </div>
+  <!-- Main content -->
+  <main>
+    <header>
+      <h1>Armin Ashrafi</h1>
+      <p>
+        <a href="https://www.ualberta.ca" target="_blank" rel="noopener noreferrer">Department of Computing Science</a>,
+        <a href="https://www.ualberta.ca" target="_blank" rel="noopener noreferrer">University of Alberta</a>
+        <br />
+        University of Alberta | CIFAR AI Chair
+      </p>
+    </header>
 
+    <div class="profile-wrapper">
+      <!-- Replace src with your own photo -->
+      <img src="../../images/armin_ashrafi.jpg" alt="Portrait of Your Name" />
 
+      <div class="contact">
+        <p><strong>Office:</strong> Athabasca Hall 3‑08</p>
+        <p><strong>Email:</strong> <a href="mailto:armin.ashrafi@ualberta.ca">you@ualberta.ca</a></p>
+        <p><strong>Mail:</strong> University of Alberta, Edmonton, AB, Canada</p>
+        <p><strong>ORCID:</strong> <a href="https://orcid.org/0000-0000-0000-0000">0000‑0000‑0000‑0000</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/polionus">yourhandle</a></p>
+        <p><strong>Twitter:</strong> <a href="https://x.com/yourhandle">@yourhandle</a></p>
+      </div>
+    </div>
+
+    <section>
+      <h2>About</h2>
+      <p>
+        I am Master of Computing Science student at the University of Alberta. My research interests
+        lie broadly in machine learning, specifically in (deep) reinforcement learning,
+        representation learning, continual learning, and real‑world applications of all
+        the above.
+      </p>
+      <p>
+        Previously, I studied Computer Science at Islamic Azad University, and worked in the Machine Learning
+        startup Chashmyar, and the E-learning platform Shastad.ir, where I created educational content and also was an AI 
+        engineer for their recommendation system. 
+      </p>
+      <p>
+        I completed my B.Sc. and M.Sc. at UFMG, Brazil, and my Ph.D. at the University
+        of Alberta, where I popularized the idea of temporally‑extended exploration
+        through options, introducing the concept of eigenoptions.
+      </p>
+    </section>
+
+    <section>
+      <h2>Research Interests</h2>
+      <ul>
+        <li>Deep Reinforcement Learning</li>
+        <li>Representation &amp; Feature Learning</li>
+        <li>Continual &amp; Lifelong Learning</li>
+        <li>AI for Real‑World Control Problems</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Selected Highlights</h2>
+      <ul>
+        <li>Introduced stochasticity and game modes in the Arcade Learning Environment.</li>
+        <li>Pioneered the use of eigenoptions for temporally‑extended exploration.</li>
+        <li>Awarded the CIFAR AI Chair for contributions to reinforcement learning.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    © Copyright <span id="year"></span> Your Name. Inspired by
+    <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="noopener noreferrer">al‑folio</a>
+    theme.
+  </footer>
+
+  <script>
+    // Update copyright year automatically
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
